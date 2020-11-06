@@ -1,0 +1,16 @@
+div {
+ border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#login_button {
+  background-color: yellow;
+}
+
+#login_info {
+  background-color: yellowgreen;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Information</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+	body {
+		color: #fff;
+		background: #5B9279;
+	}
+
+  #title {
+    font-weight: 800;
+    font-size: larger;
+
+  }
+
+
+  #userinfo-title {
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+	
+  #profile-picture {
+    width: 90%;
+    margin: 20px;
+  }
+
+ 
+
+  .list-group{
+    color:#000000;
+    background-color: #8FCB9B;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+  }
+  
+
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #8FCB9B;">
+    <a class="navbar-brand" href="home.html">
+      <span id ="title" >SustainUp!</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="leaderboard.html">Leaderboard </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="account.html">Account <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign Out</a>
+      </ul>
+    </div>
+  </nav>
+
+  <div id = "userinfo-title">
+    <h1 class ="title">User Information</h3>
+  </div>
+  
+  <div id = "board" class = "container">
+    <div class ="row justify-content-around">
+      <div class = "col-lg-5 col-11 justify-content-center align-items-center">
+        <img id ="profile-picture" src="images/lisa.png" alt="profile"/>
+      </div>
+      <div class = "col-lg-6 col-11">
+        <div id = "personal-description"class = "col-11">
+          <h3 class = "section_title">Personal Description</h3>
+          <p>Username: tommy987</p>
+          <p>Email   : ttrojan987@usc.edu</p>
+          <p>Lisa Marie Simpson[1] is a fictional character in the animated television series The Simpsons. She is the middle child and most accomplished of the Simpson family. Voiced by Yeardley Smith, Lisa was born as a character in The Tracey Ullman Show short "Good Night" on April 19, 1987. Cartoonist Matt Groening created and designed her while waiting to meet James L. Brooks. Groening had been invited to pitch a series of shorts based on his comic Life in Hell, but instead decided to create a new set of characters. He named the elder Simpson daughter after his younger sister Lisa Groening Bartlett. After appearing on The Tracey Ullman Show for three years, the Simpson family were moved to their own series on Fox, which debuted on December 17, 1989.</p>
+        </div>
+        <div id = "current-tasks" class = "col-11">
+          <h3 class = "section_title">Current Tasks</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Task 1</li>
+            <li class="list-group-item">Task 2</li>
+            <li class="list-group-item">Task 3</li>
+            <li class="list-group-item">Task 4</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log In</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<style>
+	body {
+		color: #fff;
+		background: #5B9279;
+	}
+	.form-control {
+		min-height: 41px;
+		background: #fff;
+		box-shadow: none !important;
+		border: transparent;
+	}
+	.form-control:focus {
+		background: #f2f8f2;
+	}
+	.form-control, .btn {        
+    border-radius: 10px;
+  }
+	.login-form {
+		width: 500px;
+		margin: 30px auto;
+		text-align: center;
+	}
+	.login-form h2 {
+    margin: 10px 0 25px;
+  }
+  .login-form form {
+    color: #7a7a7a;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: #eae6e5;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .login-form .btn {        
+    font-size: 16px;
+    font-weight: bold;
+    background: #8FCB9B;
+    border: none;
+    outline: none !important;
+  }
+	.login-form .btn:hover, .login-form .btn:focus {
+		background: #336b2b;
+  }
+  
+  #login_button {
+    background: #17530f;
+  }
+
+  #login_button .btn:focus, #login_button .btn:hover {
+    background: #073800;
+  }
+
+  #login_banner {
+    position: relative;
+    background-image: url('images/yosemite.jpeg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 995px;
+    width: 603px;
+    min-width: 603px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #login_button:hover  {
+    background: #073800;
+  }
+
+	.login-form a {
+		color: #fff;
+		text-decoration: underline;
+	}
+	.login-form a:hover {
+		text-decoration: none;
+	}
+	.login-form form a {
+		color: #7a7a7a;
+		text-decoration: none;
+	}
+	.login-form form a:hover {
+		text-decoration: underline;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #login_banner_mobile {
+    display:none;
+    background-image: url('images/eco2.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .title {
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #make_one {
+    color: wheat;
+  }
+
+
+  @media (max-width: 991px){
+    .container{
+     flex-wrap: wrap;
+    }
+    #login_banner {
+      display: none;
+    }
+    #login_banner_mobile{
+      display: flex;    
+    }
+  }
+
+
+</style>
+</head>
+<body>
+  <div class = "container">
+    <div id = "login_banner" class = "row">
+      <h1 class = "title">Welcome to SustainUp!</h1>
+    </div>
+    <div id = "login_banner_mobile" class = "row">
+      <h1 class = "title">Welcome to SustainUp!</h1>
+    </div>
+    <div class="login-form">
+      <form action="login.html" method="post">  
+        <div class="form-group has-error">
+          <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>        
+        <div class="form-group">
+          <button id = "login_button" type="submit" class="btn btn-primary btn-lg btn-block">Log in</button>
+        </div>
+        <div>
+          <a href="home.html"><button type ="button" class="btn btn-primary btn-lg btn-block">Continue as guest</button></a>
+        </div>
+      </form>
+    <p class="text-center small">Don't have an account? <a id = "make_one" href="register.html">Make one here!</a> </p>      
+    </div>
+  </div>
+</body>
+</html>
