@@ -120,6 +120,8 @@
     visibility: visible;
   }
 
+  
+
   @media (max-width: 960px){
     .task-inside {
       font-size: 2vw;
@@ -178,6 +180,7 @@
         <div class ="row justify-content-center">
           <div class = "row outer-profile">
             <div id ="profile" class ="row justify-content-around  align-items-center">
+              <!--
               <div class ="col-4">
                 <img id ="profile-picture" src="images/lisa.png" alt="profile"/>
               </div>
@@ -186,17 +189,19 @@
                 <p>ttrojan987@usc.edu</p>
                 <p>Finished 10 Tasks!</p>
               </div>
+              -->
             </div>
           </div>
         </div>
       </div>
       <div class = "section col-lg-5 col-11"><h3 class = "section_title">Daily Tasks</h3>
-        <div class ="row justify-content-start">
+        <div id = "daily_task" class ="row justify-content-start">
+          <!--
           <div class ="col-3 px-3 task">
             <div class = "row task-inside">
               Using Tumbler
-              <br>Don't use paper cups!</div>
-              <img id="check" src="images/check.png" alt ="check"/>
+            <br>Don't use paper cups!</div>
+            <img id="check" src="images/check.png" alt ="check"/>
           </div>
           <div class ="col-3 task">           
             <div class = "row task-inside">Task</div>
@@ -210,13 +215,15 @@
             <div class = "row task-inside">Task</div>
             <img id="check" src="images/check.png" alt ="check"/>
           </div>
+          -->
         </div>
       </div>
     </div>
 
     <div class ="row justify-content-center">
       <div class = "section col-lg-5 col-11"><h3 class = "section_title">Finished Tasks</h3>
-        <div class ="row justify-content-start">
+        <div id ="finished_task" class ="row justify-content-start">
+          <!--
           <div class ="col-3 task">
             <div class = "row task-inside">Task</div>
             <img id="delete" src="images/delete.png" alt ="delete"/>
@@ -229,10 +236,12 @@
             <div class = "row task-inside">Task</div>   
             <img id="delete" src="images/delete.png" alt ="delete"/>
           </div>
+          -->
         </div>
       </div>
       <div class = "section col-lg-5 col-11"><h3 class = "section_title">Current Tasks</h3>
-        <div class ="row justify-content-start">
+        <div id ="current_task" class ="row justify-content-start">
+          <!--
           <div class ="col-3 task">
             <div class = "row task-inside">Task</div>
             <img id="check" src="images/check.png" alt ="check"/>
@@ -273,10 +282,14 @@
             <img id="check" src="images/check.png" alt ="check"/>
             <img id="delete" src="images/delete.png" alt ="delete"/>  
           </div>
+          -->
         </div>
       </div>
     </div>
 
   </div>
 </body>
+
+<script src ="home.js">
+</script>
 </html>
