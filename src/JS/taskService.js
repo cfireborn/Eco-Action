@@ -51,5 +51,35 @@ function getCompletedTasks(username)
     })
 }
 
+function removeTask(username, task)
+{
+    var db = firebase.database();
+    var ref = db.ref('current/' + username + '/tasks');
+    ref.once('value').then(function(snapshot) {
+      var taskExists = snapshot.child(task).exists();
+      if (taskExists){
+        ref.child(task).remove();
+        db.ref('completed/' + username + '/tasks').push(task);
+        db.ref('users/' + username + '/completed').increment(1);
+        return;
+      }
+    });
+}
+
+function addTask(username, task)
+{
+    var db = firebase.database();
+    var ref = db.ref('current/' + username + '/tasks');
+    ref.once('value').then(function(snapshot) {
+      var taskExists = snapshot.child(task).exists();
+      if (!taskExists){
+        db.ref.push(task);
+        return;
+      }
+    });
+}
+
+module.exports = { removeTask }
+module.exports = { addTask }
 module.exports = {register}
 
